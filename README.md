@@ -3,7 +3,7 @@ A .sh script used to create backups of your home folder (only your personal file
 
 This script is used to copy contents of your home folder, to an external drive.
 
-This script is licensed under the GNU General Public License v3]
+This script is licensed under the GNU General Public License v3
 
 REMEMBER, You MUST edit this file before usage.
 
