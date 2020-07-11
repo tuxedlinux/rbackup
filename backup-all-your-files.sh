@@ -4,7 +4,7 @@
 
 #Created by Aaron Renny, Linux Mint GNOME Edition developer.
 
-#This .sh file is licensed under GNU General Public License v3
+#This .sh file is licensed under GNU General Public License v3.0
 
 #This .sh file creates a whole backup of your home folder. But you must edit the file below. Such as replacing * with the username that you have set for your Linux installation. Also replace /media/*/*/All-your-backup with your external disk name, such as /media/aaron/USB Device or /media/aaron/SanDisk.
 
