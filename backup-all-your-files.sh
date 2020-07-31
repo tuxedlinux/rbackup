@@ -16,8 +16,6 @@
 
 echo Backing up your files....
 
-mount /dev/edit-me
-
 mkdir /media/$USER/edit-me/All-your-backup
 
 cp -r /home/$USER/Documents /media/$USER/edit-me/All-your-backup
