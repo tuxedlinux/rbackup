@@ -18,20 +18,22 @@ echo Backing up your files....
 
 mkdir /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Documents /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Documents /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Downloads /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Downloads /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Music/ /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Music/ /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Pictures /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Pictures /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Public /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Public /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Templates /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Templates /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Videos /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Videos /media/$USER/edit-me/All-your-backup
 
-cp -r /home/$USER/Desktop /media/$USER/edit-me/All-your-backup
+rsync -r /home/$USER/Videos /media/$USER/edit-me/All-your-backup
+
+rsync -r /home/$USER/Desktop /media/$USER/edit-me/All-your-backup
 
 echo Backup Done.
