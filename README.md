@@ -7,7 +7,7 @@ This script is licensed under the GNU General Public License v3
 
 REMEMBER, You MUST edit this file before usage.
 
-#Dependencies
+# Dependencies
 
 You will need to install rsync in prder to run this script.
 
