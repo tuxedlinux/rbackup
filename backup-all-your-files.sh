@@ -6,7 +6,7 @@
 
 #This .sh file is licensed under GNU General Public License-3.0
 
-#This .sh file creates a whole backup of your home folder. But you must edit the file below.
+#This .sh file creates a whole backup of your home folder. But you must edit the file below. Replace "edit-me" with your device name (find with lsblk and Gnome Disk Utility)
 
 #If you have any other folder or files, add them too :)
 
@@ -15,6 +15,8 @@
 #At last, to make this script to work, please make it execuable. Type in: chmod +x ./home/your-username/Path/to/backup-all-your-files.sh. Alter "/Path/to" with your folder.
 
 echo Backing up your files....
+
+mount /dev/edit-me
 
 mkdir /media/$USER/edit-me/All-your-backup
 
