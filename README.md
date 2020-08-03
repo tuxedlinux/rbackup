@@ -1,4 +1,4 @@
-# Backup-all-your-files
+# Rbackup
 A shell script script used to create backups of your home folder (only your personal files)
 
 This script is used to copy contents of your home folder, to an external drive.
@@ -7,9 +7,11 @@ This script is licensed under the GNU General Public License v3
 
 REMEMBER, You MUST edit this file before usage.
 
+It uses Rsync at it's core.
+
 # Dependencies
 
-You will need to install rsync in prder to run this script.
+You will need to install rsync in order to run this script.
 
 # How to run the script?
 
