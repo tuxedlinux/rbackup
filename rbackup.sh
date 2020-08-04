@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 #PLEASE read all the contents of this text file. Thank you.
 
