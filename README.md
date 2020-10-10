@@ -9,11 +9,11 @@ REMEMBER, You MUST edit this file before usage.
 
 It uses Rsync at it's core.
 
-# Dependencies
+## Dependencies
 
 You will need to install rsync in order to run this script.
 
-# How to run the script?
+### How to run the script?
 
 This script can only be run on Linux and macOS computers at the time. A Windows version of this script will come soon.
 
@@ -21,12 +21,12 @@ So, lets make the script exectutable. This can be done on Linux and macOS comput
 
 Open up a terminal and type:
 
-chmod +x /Path/to/backup-all-your-files.sh (make sure to replace /Path/to with your desired username and file system)
+`chmod +x /Path/to/rbackup` (make sure to replace /Path/to with your desired username and file system)
 
 Now, lets run the script (make sure you have edited it)
 
 Type in the terminal:
 
-/Path/to/backup-all-your-files.sh (again, make sure to replace /Path/to with your desired username and file system)
+`/Path/to/rbackup` (again, make sure to replace /Path/to with your desired username and file system)
 
 And........viola! Your backup will be in the external drive.
