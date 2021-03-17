@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# PLEASE read all the contents of this text file. Thank you.
+# PLEASE read all the contents of this text file. Thank you."
 
 # This file is licensed under GNU General Public License-3.0
 
@@ -8,36 +8,50 @@
 
 # If you have any other folder or files, add them too :)
 
-# If you want to exclude any files/folders, add a # in front of the sentence and the following line.
+# If you want to exclude any files/folders, add a # in front of the sentence and the following line."
 
-# At last, to make this script to work, please make it execuable. Type in: chmod +x ./home/your-username/Path/to/backup-all-your-files.sh. Alter "/Path/to" with your folder.
+# At last, to make this script to work, please make it execuable. Type in: chmod +x ./home/your-username/Path/to/backup-all-your-files.sh. Alter "/Path/to" with your folder."
 
-echo Backing up your files....
+if [[ -z "$@" ]] || [[ ! -z "$2" ]]; then
 
-sleep 2
+    echo "Invalid argument count."
 
-mount /dev/edit-me
+fi
 
-mkdir /media/$USER/edit-me/All-your-backup
+exit
 
-rsync -r /home/$USER/Documents /media/$USER/edit-me/All-your-backup && echo Documents folder has been backed up.
+echo "Mounting backup drive"
 
-rsync -r /home/$USER/Downloads /media/$USER/edit-me/All-your-backup && echo Downloads folder has been backed up.
+if [[ -f "/dev/$1" ]]; then
 
-rsync -r /home/$USER/Music/ /media/$USER/edit-me/All-your-backup && echo Music folder has been backed up.
+    echo "Invalid drive."
 
-rsync -r /home/$USER/Pictures /media/$USER/edit-me/All-your-backup && echo Pictures folder has been backed up.
+fi
 
-rsync -r /home/$USER/Public /media/$USER/edit-me/All-your-backup && echo Public folder has been backed up.
+sudo mount /dev/$1 "/media/$USER/$1-backup"
 
-rsync -r /home/$USER/Templates /media/$USER/edit-me/All-your-backup && echo Templates folder has been backed up.
+echo "Prepping directories..."
 
-rsync -r /home/$USER/Videos /media/$USER/edit-me/All-your-backup && echo Videos folder has been backed up.
+mkdir "/media/$USER/$1-rbackup/rbackup"
 
-rsync -r /home/$USER/Desktop /media/$USER/edit-me/All-your-backup && echo Desktop has been backed up.
+echo "Backing up your files...."
 
-sleep 1
+rsync -r ~/Documents "/media/$USER/$1-rbackup/rbackup" && echo "Documents folder has been backed up."
 
-echo Backup Done.
+rsync -r ~/Downloads "/media/$USER/$1-rbackup/rbackup" && echo "Downloads folder has been backed up."
 
-sleep 2
+rsync -r ~/Music/ "/media/$USER/$1-rbackup/rbackup" && echo "Music folder has been backed up."
+
+rsync -r ~/Pictures "/media/$USER/$1-rbackup/rbackup" && echo "Pictures folder has been backed up."
+
+rsync -r ~/Public "/media/$USER/$1-rbackup/rbackup" && echo "Public folder has been backed up."
+
+rsync -r ~/Templates "/media/$USER/$1-rbackup/rbackup" && echo "Templates folder has been backed up."
+
+rsync -r ~/Videos "/media/$USER/$1-rbackup/rbackup" && echo "Videos folder has been backed up."
+
+rsync -r ~/Desktop "/media/$USER/$1-rbackup/rbackup" && echo "Desktop has been backed up."
+
+rsync -r ~/.config "/media/$USER/$1-rbackup/rbackup" && echo ".config has been backed up."
+
+echo "Backup Done."
