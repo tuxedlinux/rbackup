@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# PLEASE read all the contents of this text file. Thank you."
+# PLEASE read all the contents of this text file. Thank you.
 
 # This file is licensed under GNU General Public License-3.0
 
@@ -8,7 +8,7 @@
 
 # If you have any other folder or files, add them too :)
 
-# If you want to exclude any files/folders, add a # in front of the sentence and the following line."
+# If you want to exclude any files/folders, add a # in front of the sentence and the following line.
 
 # At last, to make this script to work, please make it execuable. Type in: chmod +x ./home/your-username/Path/to/backup-all-your-files.sh. Alter "/Path/to" with your folder."
 
